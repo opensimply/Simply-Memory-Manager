@@ -9,7 +9,7 @@ Works stable with Free Pascal and Lazarus on Windows x32 and x64.
 On Ubuntu x64 and Xubuntu x32 works stable in single-thread mode with Free Pascal.
 
 
-# How to use
+## How to use
 ==========
 
 Place "SimplyMM" the first after the statement "uses" like
