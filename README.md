@@ -1,4 +1,4 @@
-# Simply-Memory-Manager
+# Simply Memory Manager
 
 Memory manager for Free Pascal and Lazarus. Suitable for simulation. 
 
@@ -34,6 +34,6 @@ uses
 
 Homepage: http://opensimply.org
 
-SimplyMM is a part of OpenSIMPLY project https://sourceforge.net/projects/opensimply/
+SimplyMM is a part of OpenSIMPLY project https://github.com/dmregger/OpenSIMPLY/
 
 Try it also. 
