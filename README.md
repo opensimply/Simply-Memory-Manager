@@ -19,7 +19,7 @@ uses
   ....
   
  
-# SimplyMM and memory leaks tracing
+## SimplyMM and memory leaks tracing
 =================================
 
 Disable SimplyMM when using heap trace menager HeapTrc like
@@ -29,7 +29,8 @@ uses
   .... 
  
 
-
+## Links
+========
 
 Homepage: http://opensimply.org
 
