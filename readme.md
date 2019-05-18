@@ -1,4 +1,4 @@
-# Simply Memory Manager 1.61
+# Simply Memory Manager 1.62
 ****************************
 
 Memory manager for Free Pascal and Lazarus. Suitable for simulation. 
@@ -32,5 +32,3 @@ Disable SimplyMM when using heap trace menager HeapTrc like
 Homepage: http://opensimply.org
 
 SimplyMM is a part of [OpenSIMPLY project](https://sourceforge.net/projects/opensimply/)
-
-Try it also. 
