@@ -20,11 +20,12 @@ Place "SimplyMM" the first after the statement "uses" like
  
 ## SimplyMM and memory leaks tracing
 
-Disable SimplyMM when using heap trace menager HeapTrc like
+Exclude SimplyMM from "uses" statement when heap trace manager "HeapTrc" is active.
 
     uses
      // SimplyMM,
        .... 
+	
  
  
 ## Links
