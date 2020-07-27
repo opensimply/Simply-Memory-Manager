@@ -1,12 +1,26 @@
-# Simply Memory Manager 1.62
+# Simply Memory Manager 1.65
 ****************************
 
-Memory manager for Free Pascal and Lazarus. Suitable for simulation. 
+Simply Memory Manager (SMM) replaces native Free Pascal memory manager on Windows.
 
-Simply Memory Manager replaces native Free Pascal memory manager on Windows.
+* Works stable with Free Pascal and Lazarus on 32-bit and 64-bit Windows.
 
-Works stable with Free Pascal and Lazarus on Windows x32 and x64.
-On Ubuntu x64 and Xubuntu x32 works stable in single-thread mode with Free Pascal.
+* Suitable for simulation. 
+
+* Prevents the "out of memory" error when cyclically allocating and
+  freeing a large amount of memory.
+
+* A bit faster on avalanche-like memory allocation requests.
+
+* SMM has a "reserved memory" feature for the "out of memory" case.
+
+
+(!) Mind that the SMM runs slower than the native FPC memory manager.
+
+This is due to the fact that when using Lazarus, some memory blocks had been already allocated even when SMM was the first module in the "use" statement.
+To prevent memory errors, the SMM must recognize and process the freeing and relocating requests for memory blocks already allocated by FPC memory manager.
+
+The memory slowdown due to SMM is especially noticeable in the GUI, due to the constant redrawing of graphical controls that use memory movement.  
 
 
 ## How to use
