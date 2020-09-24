@@ -44,6 +44,6 @@ Exclude SimplyMM from "uses" statement when heap trace manager "HeapTrc" is acti
  
 ## Links
 
-Homepage: http://opensimply.org
+Homepage: https://opensimply.org
 
 SimplyMM is a part of [OpenSIMPLY project](https://sourceforge.net/projects/opensimply/)
