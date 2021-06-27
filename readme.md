@@ -21,8 +21,8 @@ memory is reusing multiply, the SMM is a good solution for such cases.
   when SMM was the first module in the "uses" statement. To prevent memory
   errors, the SMM must recognize and process the freeing and reallocating
   requests for memory blocks already allocated by FPC memory manager.
-  The memory operations slowdown due to SMM is mostly notable in the GUI, due
-  to the constant redrawing of graphical controls that use memory movement.
+  Memory slowdowns because of SMM are mostly noticeable in the GUI due to the
+  constant redrawing of graphical controls that use memory movement.
 
 - Warning! Do not use the SMM when heap tracing. SMM does not support it.
 
