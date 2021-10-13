@@ -1,4 +1,4 @@
-# Simply Memory Manager 2.0
+# Simply Memory Manager 2.1
 ***************************
 
 This release is a significantly redesigned version with improved performance and some fixes.
@@ -62,4 +62,4 @@ In such cases, exclude SMM from the "uses" statement.
 
 Homepage: http://opensimply.org
 
-
+SimplyMM is a part of [OpenSIMPLY project](https://github.com/opensimply/OpenSIMPLY)
