@@ -1,56 +1,51 @@
-# Simply Memory Manager 2.1
+# Simply Memory Manager 2.2
 ***************************
 
-This release is a significantly redesigned version with improved performance and some fixes.
-
+Memory manager for Free Pascal and Lazarus. 
 
 
 ## Scope of use
 
-The Simply Memory Manager (SMM) is used for Free Pascal and Lazarus on Windows.
+The Simply Memory Manager (SMM) is offered to replace Free Pascal's native
+memory manager for Free Pascal and Lazarus projects on Windows.
 
 Simulation modeling of large and complex systems (and not only simulation)
 requires multiple reuse of the maximum amount of available memory.
 
 Free Pascal's native memory manager uses certain Windows functions for memory
-allocation and freeing that cause fatal errors when large amount of memory is
-reusing multiply.
+allocation and freeing, which cause fatal errors when large amount of memory is
+reusing multiply. In addition, the memory manager runs in this case is rather slow.
 
-The SMM prevents such errors. 
+The SMM prevents such errors, and it is a much faster on avalanche-like memory
+allocation requests. Run the "TestMemMgr" project to compare the performance.
 
+The SMM has a "reserved memory" feature for the "out of memory" case that may
+prevent critical error of your project .
 
+In some cases, the SMM may be a bit slower than the native memory manager.
+This is due to the fact that when using Lazarus IDE, some memory blocks
+had been already allocated even when the SMM was the first module in the
+"uses" statement. To prevent such memory errors, the SMM must recognize
+and process the freeing and reallocating requests for memory blocks
+already allocated by Free Pascal's memory manager.
 
-## Advantages and disadvantages
-
-+ SMM prevents the "out of memory" error when cyclically allocating and
-  freeing large amounts of memory.
-
-+ It is a bit faster on avalanche-like memory allocation requests. Run "TestMemMgr" project included in the SMM package to compare the performance.
-
-+ SMM demonstrates enough good performance both for single- and multi-thread tasks.
-  
-+ SMM has a "reserved memory" feature for the "out of memory" case.
-
-- In some cases, SMM may be a bit slower than the native FPC memory manager. This is due to the fact that when using Lazarus, some memory blocks had been already allocated even when SMM was the first module in the "uses" statement. To prevent memory errors, the SMM must recognize
-  and process the freeing and reallocating requests for memory blocks already allocated by FPC memory manager. Thus, the slowdown due to SMM might probably be most noticeable in some 
-  cases in the GUI due to the constant redrawing of graphical controls that use memory movement.
-
+Thus, the slowdown due to the SMM might probably be most noticeable in some
+cases in the GUI due to the constant redrawing of graphical controls that
+use memory movement (reallocation).
 
 
 ## How to use
 
-Place SMM the first after the "uses" statement.
+Place SimplySMM unit the first after the "uses" statement.
 
     uses
       SimplyMM,
         ....
  
-
- 
 ## SMM and memory leaks tracing
 
-Do not use SMM when heap trace manager HeapTrc is active. 
-In such cases, exclude SMM from the "uses" statement.
+Do not use SMM when HeapTrc heap trace manager is active. 
+In such cases, exclude the SimplySMM unit from the "uses" statement.  
 
     uses
      // SimplyMM,
@@ -58,8 +53,11 @@ In such cases, exclude SMM from the "uses" statement.
 	
  
  
-## Links
+## Terms of Use 
 
-Homepage: http://opensimply.org
+The Simply Memory manager is free open source software under GNU General
+Public License version 3, and is a part of the OpenSIMPLY project.
 
-SimplyMM is a part of [OpenSIMPLY project](https://github.com/opensimply/OpenSIMPLY)
+Home page: https://opensimply.org/smm/
+
+Ask a question or report an issue: https://opensimply.org/feedback
