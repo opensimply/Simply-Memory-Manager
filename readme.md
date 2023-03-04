@@ -1,4 +1,4 @@
-# Simply Memory Manager 2.2   Download at: [opensimply.org/smm](https://opensimply.org/smm/)   
+# Simply Memory Manager 2.2  
 ***************************
 
 Memory manager for Free Pascal and Lazarus. 
