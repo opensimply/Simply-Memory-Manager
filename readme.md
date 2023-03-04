@@ -3,11 +3,10 @@
 
 Memory manager for Free Pascal and Lazarus. 
 
-## Main download location: [opensimply.org/smm](https://opensimply.org/smm/) 
+## Download at: [opensimply.org/smm](https://opensimply.org/smm/) 
 
-This repository might not be updated on time.
+This repository will not be updated.
 
-It would be better to visit the [opensimply.org/smm](https://opensimply.org/smm/)  home page for the latest version.
 
 
 
