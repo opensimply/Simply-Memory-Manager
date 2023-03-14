@@ -1,6 +1,6 @@
 (******************************************************************************
 
-   Open source free memory manager for Free Pascal amd Lazarus on Windows.
+   Open source free memory manager for Free Pascal and Lazarus on Windows.
 
    Download at: https://opensimply.org/smm/ 
 
