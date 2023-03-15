@@ -2,7 +2,7 @@
 
   This is an example using Simply Memory Manager.
 
-  Download a: https://opensimply.org/smm/ 
+  Download Simply Memory Manager at https://opensimply.org/smm/ 
 
 *******************************************************************************)
 
