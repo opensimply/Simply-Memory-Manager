@@ -2,6 +2,8 @@
 
 ## Download Simply Memory Manager 2.2 at [opensimply.org/smm](https://opensimply.org/smm/) 
 
+***
+
 The Simply Memory Manager (SMM) is a replacement for the native memory manager for Free Pascal and Lazarus projects on Windows.
 
 In some cases, it is necessary to repeatedly get and free a large amount of memory.
