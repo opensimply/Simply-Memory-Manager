@@ -12,6 +12,6 @@ uses
   SimplyMM;
 
 begin
-  WriteLn('Simply Memory Manager ',GetVersionAsStr);
+  WriteLn('Simply Memory Manager ', GetVersionAsStr);
 end.
 
